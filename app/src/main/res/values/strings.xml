@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ProyectoFinalTrimestre</string>
+    <string name="google_client_id">13795341505-hmm8j86idc9lpuclegfdk3q45nnqgstk.apps.googleusercontent.com</string>
+
+    <!-- Array de idiomas para el Spinner -->
+    <string-array name="options_idiomas">
+        <item>Español</item>
+        <item>Inglés</item>
+        <item>Francés</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_ver_imagen">VerImagenActivity</string>
+</resources>

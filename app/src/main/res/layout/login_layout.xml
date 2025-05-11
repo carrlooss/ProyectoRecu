@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loogin">
+
+    <!-- Elemento decorativo superior (onda) -->
+    <ImageView
+        android:id="@+id/ivTopWave"
+        android:layout_width="412dp"
+        android:layout_height="135dp"
+        android:contentDescription="Wave Top"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Tarjeta de inicio de sesión -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="80dp">
+
+        <LinearLayout
+            android:id="@+id/linearLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Título de la pantalla -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Iniciar Sesión"
+                android:textColor="#3F51B5"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Campo de Usuario -->
+            <EditText
+                android:id="@+id/usuario"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:hint="Usuario"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:backgroundTint="#E0E0E0"
+                android:textColor="#333333"
+                android:textColorHint="#A6A6A6"
+                android:importantForAccessibility="yes" />
+
+            <!-- Campo de Contraseña -->
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:backgroundTint="#E0E0E0"
+                android:textColor="#333333"
+                android:textColorHint="#A6A6A6"
+                android:importantForAccessibility="yes" />
+
+            <!-- Mensaje de error (oculto por defecto) -->
+            <TextView
+                android:id="@+id/tvErrorMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Error: Usuario o contraseña incorrectos"
+                android:textColor="#FF0000"
+                android:visibility="gone"
+                android:textSize="14sp" />
+
+            <!-- Botón "Iniciar Sesión" -->
+            <Button
+                android:id="@+id/iniciarsesion"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#3F51B5"
+                android:text="Iniciar Sesión"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <!-- Botón "Registrar" -->
+            <Button
+                android:id="@+id/registrar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#FFC107"
+                android:text="Registrar"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <!-- Contenedor para botones de "Limpiar" y "Iniciar con Google" -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <!-- Botón "Limpiar" -->
+                <Button
+                    android:id="@+id/limpiar"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFC107"
+                    android:text="Limpiar"
+                    android:textColor="#333333"
+                    android:textStyle="bold"/>
+
+                <!-- Botón "Iniciar con Google" -->
+                <com.google.android.gms.common.SignInButton
+                    android:id="@+id/btnGoogleSignIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
