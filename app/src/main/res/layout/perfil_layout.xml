@@ -8,7 +8,6 @@
     tools:context=".PerfilActivity"
     android:background="#F2F2F2">
 
-    <!-- Título de la pantalla -->
     <TextView
         android:id="@+id/et_title2"
         android:layout_width="wrap_content"
@@ -23,7 +22,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Campo de Nombre -->
     <EditText
         android:id="@+id/et_nombre"
         android:layout_width="0dp"
@@ -44,7 +42,6 @@
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"/>
 
-    <!-- Campo de Dirección -->
     <EditText
         android:id="@+id/et_direccion"
         android:layout_width="0dp"
@@ -65,7 +62,6 @@
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"/>
 
-    <!-- Campo de Teléfono -->
     <EditText
         android:id="@+id/et_telefono"
         android:layout_width="0dp"
@@ -86,7 +82,6 @@
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"/>
 
-    <!-- Campo de Email -->
     <EditText
         android:id="@+id/et_email"
         android:layout_width="0dp"
@@ -107,7 +102,6 @@
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"/>
 
-    <!-- Botón Guardar -->
     <Button
         android:id="@+id/btn2_guardar"
         android:layout_width="0dp"
@@ -125,7 +119,6 @@
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"/>
 
-    <!-- Botón Cancelar -->
     <Button
         android:id="@+id/btn_cancelar"
         android:layout_width="0dp"

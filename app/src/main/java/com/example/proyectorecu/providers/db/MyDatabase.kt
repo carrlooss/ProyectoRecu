@@ -5,7 +5,7 @@ import android.database.sqlite.SQLiteOpenHelper
 import com.example.proyectorecu.Aplicacion
 
 //Clase encargada de gestionar la base de datos SQLite de la aplicación.
-//Hereda de `SQLiteOpenHelper` para facilitar la creación y actualización de la BD.
+//Hereda de SQLiteOpenHelper para facilitar la creación y actualización de la BD.
 class MyDatabase(): SQLiteOpenHelper(Aplicacion.appContext, Aplicacion.DB, null, Aplicacion.VERSION) {
     // Query SQL para la creación de la tabla de tareas
     private val q="create table ${Aplicacion.TABLA}(" +

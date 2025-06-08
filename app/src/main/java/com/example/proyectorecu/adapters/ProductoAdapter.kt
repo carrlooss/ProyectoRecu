@@ -39,7 +39,7 @@ class ProductoAdapter(private val productos: List<Producto>, private val viewMod
             viewModel.marcarComprado(producto)
         }
 
-        // Configurar botón Eliminar con estilo más bonito
+        // Configurar botón Eliminar
         holder.btnEliminar.text = "🗑"
         holder.btnEliminar.setBackgroundColor(Color.GRAY)
         holder.btnEliminar.setOnClickListener {

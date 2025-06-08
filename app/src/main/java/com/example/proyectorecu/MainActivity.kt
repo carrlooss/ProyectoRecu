@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        //applicationContext.deleteDatabase("Base_1")
+        //applicationContext.deleteDatabase
 
         //setSearchView()
         setListeners()

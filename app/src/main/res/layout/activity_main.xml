@@ -9,7 +9,6 @@
     android:padding="16dp"
     android:background="@drawable/background_gradient">
 
-    <!-- SearchView con bordes redondeados y sombra -->
     <androidx.appcompat.widget.SearchView
         android:id="@+id/searchView"
         android:layout_width="match_parent"
@@ -23,7 +22,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- RecyclerView con borde redondeado y sombra -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="0dp"
@@ -36,7 +34,6 @@
         app:layout_constraintTop_toTopOf="@id/searchView"
         android:elevation="4dp" />
 
-    <!-- FloatingActionButton con fondo colorido y elevación -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_add"
         android:layout_width="wrap_content"
@@ -49,7 +46,6 @@
         app:srcCompat="@android:drawable/ic_input_add"
         android:elevation="6dp" />
 
-    <!-- ImageView con visibilidad invisible y fondo mejorado -->
     <ImageView
         android:id="@+id/iv_tareas"
         android:layout_width="120dp"
@@ -63,7 +59,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_menu_save" />
 
-    <!-- FragmentContainerView con margen superior y sombra -->
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fcv_estadisticas"
         android:layout_width="match_parent"

@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context=".fragments.FragmentMenu"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@drawable/background_gradient">
 
     <!-- Imagen de Gavi -->
     <ImageView
@@ -23,12 +24,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Imagen de Garnacho -->
     <ImageView
         android:id="@+id/iv_garnacho"
         android:layout_width="90dp"
         android:layout_height="90dp"
-        android:src="@drawable/garnacho"
+        android:src="@drawable/lamineee"
         android:layout_marginEnd="12dp"
         android:layout_marginStart="12dp"
         android:background="@drawable/round_border"
@@ -38,12 +38,11 @@
         app:layout_constraintStart_toEndOf="@id/iv_gavi"
         app:layout_constraintTop_toTopOf="@id/iv_gavi" />
 
-    <!-- Imagen de Gyokeres -->
     <ImageView
         android:id="@+id/iv_gyokeres"
         android:layout_width="90dp"
         android:layout_height="90dp"
-        android:src="@drawable/gyokeres"
+        android:src="@drawable/pedrii"
         android:layout_marginStart="12dp"
         android:layout_marginEnd="12dp"
         android:background="@drawable/round_border"

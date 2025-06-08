@@ -35,7 +35,7 @@ class AddActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        // Configura las opciones del Spinner (tipo de tarea)
+        // Configura las opciones del Spinner
         setOpcionesTipo()
         // Verifica si hay una tarea existente para editar
         recogerTarea()
@@ -54,7 +54,7 @@ class AddActivity : AppCompatActivity() {
         binding.spTipoTarea.adapter = adapter
     }
 
-    //Recoge los datos de una tarea si se pasa a través del Intent (para edición)
+    //Recoge los datos de una tarea si se pasa a través del Intent
 
     private fun recogerTarea() {
         val datos=intent.extras
@@ -92,7 +92,7 @@ class AddActivity : AppCompatActivity() {
         }
     }
 
-    //Guarda la tarea en la base de datos (crea una nueva o edita una existente)
+    //Guarda la tarea en la base de datos
     private fun guardarRegistro() {
         if(datosCorrectos()){
             val t=TareaModel(id, tipo, nombre, descripcion, realizado)

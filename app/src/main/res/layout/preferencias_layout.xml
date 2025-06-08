@@ -8,7 +8,6 @@
     tools:context=".PreferenciasActivity"
     android:background="#F2F2F2">
 
-    <!-- Título principal -->
     <TextView
         android:id="@+id/et_title2"
         android:layout_width="wrap_content"
@@ -23,7 +22,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Descripción de idioma -->
     <TextView
         android:id="@+id/textViewInfo"
         android:layout_width="wrap_content"
@@ -36,7 +34,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/et_title2" />
 
-    <!-- Spinner con opciones de idioma -->
     <Spinner
         android:id="@+id/spinnerOptions"
         android:layout_width="0dp"
@@ -50,7 +47,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textViewInfo" />
 
-    <!-- SeekBar para seleccionar valor -->
     <SeekBar
         android:id="@+id/seekBar"
         android:layout_width="0dp"
@@ -62,7 +58,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/spinnerOptions" />
 
-    <!-- Texto que muestra el valor seleccionado del SeekBar -->
     <TextView
         android:id="@+id/seekBarValue"
         android:layout_width="wrap_content"
@@ -75,7 +70,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/seekBar" />
 
-    <!-- Botón para guardar preferencias -->
     <android.widget.Button
         android:id="@+id/saveButton"
         android:layout_width="wrap_content"

@@ -5,7 +5,7 @@ import android.database.sqlite.SQLiteDatabase
 import com.example.proyectorecu.Aplicacion
 import com.example.proyectorecu.models.TareaModel
 
-//Clase que gestiona las operaciones CRUD (Create, Read, Update, Delete) de la tabla de tareas en la base de datos SQLite.
+//Clase que gestiona las operaciones CRUD de la tabla de tareas en la base de datos SQLite.
 class CrudTareas {
 
     //Inserta una nueva tarea en la base de datos.
@@ -59,7 +59,7 @@ class CrudTareas {
         return lista
     }
 
-    //Busca tareas cuyo nombre coincida (parcialmente) con el texto proporcionado.
+    //Busca tareas cuyo nombre coincida con el texto proporcionado.
     public fun searchItems(search: String): MutableList<TareaModel>{
         val lista = mutableListOf<TareaModel>()
         val con =Aplicacion.llave.readableDatabase

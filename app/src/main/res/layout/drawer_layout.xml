@@ -426,6 +426,42 @@
                     android:background="@drawable/rounded_button"
                     android:text="Gestion de Tareas" />
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:background="@drawable/card_background">
+
+                        <TextView
+                            android:id="@+id/textLux"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Luminosidad: 0 lx"
+                            android:textSize="18sp"
+                            android:textColor="#333333"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="8dp" />
+
+                        <ProgressBar
+                            android:id="@+id/progressLux"
+                            style="@android:style/Widget.ProgressBar.Horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:progress="0"
+                            android:max="1000"
+                            android:progressDrawable="@drawable/progress_lux_drawable"
+                            android:layout_marginBottom="12dp" />
+
+                        <ImageView
+                            android:id="@+id/iconLight"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/icon_sun" />
+
+                    </LinearLayout>
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 

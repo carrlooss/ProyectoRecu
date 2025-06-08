@@ -7,10 +7,4 @@
     android:layout_height="match_parent"
     tools:ignore="MissingClass">
 
-<!--    <com.github.chrisbanes.photoview.PhotoView-->
-<!--        android:id="@+id/photoView"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:scaleType="fitCenter" />-->
-
 </androidx.constraintlayout.widget.ConstraintLayout>

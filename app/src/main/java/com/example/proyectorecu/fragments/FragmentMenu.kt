@@ -21,7 +21,7 @@ class FragmentMenu : Fragment() {
         R.drawable.gavi,
         R.drawable.garnacho,
         R.drawable.gyokeres)
-    // Variable que almacena el botón que debe mostrarse iluminado, con valor por defecto 3000 (no válido)
+    // Variable que almacena el botón que debe mostrarse iluminado, con valor por defecto 3000
     var botonIluminado=3000
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -7,7 +7,6 @@
     android:background="@drawable/background_gradient"
     android:gravity="center">
 
-    <!-- EditText con bordes redondeados y sombra -->
     <EditText
         android:id="@+id/inputNombre"
         android:layout_width="match_parent"
@@ -22,7 +21,6 @@
         android:fontFamily="sans-serif-light"
         android:textSize="16sp"/>
 
-    <!-- Botón con fondo atractivo y borde redondeado -->
     <Button
         android:id="@+id/btnAgregar"
         android:layout_width="match_parent"
@@ -36,7 +34,6 @@
         android:padding="12dp"
         android:elevation="4dp" />
 
-    <!-- RecyclerView con un margen superior y bordes redondeados -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"

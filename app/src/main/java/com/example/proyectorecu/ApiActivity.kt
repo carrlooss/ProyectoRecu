@@ -18,9 +18,9 @@ class ApiActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_second)
+        setContentView(R.layout.app)
 
-        recyclerView = findViewById(R.id.recyclerView)
+        recyclerView = findViewById(R.id.popularView)
         recyclerView.layoutManager = LinearLayoutManager(this)
 
         RetrofitClient.api.getCuratedPhotos().enqueue(object : Callback<PexelsResponse> {
